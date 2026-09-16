@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primavera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(47, 0, 255);">Reservas de Cliente</h1>
+    <h2>Cadastro Cliente</h2>
+    <div>
+    <form class="form" action="salvar_hotel.php" method="POST">
+        <label class="label" for="nome">Nome do Hotel</label>
+        <input class="input" type="text" id="nome_hotel" name="nome_hotel" placeholder="Digite seu Nome" required>
+       
+        <label class="label" for="cidade">Cidade</label>
+        <input class="input" type="text" id="cidade" name="cidade" placeholder="Digite seu E-mail" required>
+
+        <label class="label" for="estrelas">Classificação em Estrelas (1 a 5)</label>
+        <input class="input" type="number" id="estrelas" name="estrelas" placeholder="Digite seu telefone" requireds>
+        
+        <button type="submit">ENVIAR CADASTRO</button>
+        <br><br>
+        <a href="index.html">Já tenho Cadastro</a>
+    </form>
+    </div>
+</body>
+</html>
